@@ -1,0 +1,10 @@
+- hosts: localhost
+  become: true
+  pre_tasks:
+    - name: update cache
+      apt:
+        update_cache: true
+
+  tasks:
+    - include: tasks/zsh.yml
+    - include: tasks/node.yml

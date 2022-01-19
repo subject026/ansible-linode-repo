@@ -1,0 +1,2 @@
+- name: install volta
+  shell: "curl https://get.volta.sh | bash"
